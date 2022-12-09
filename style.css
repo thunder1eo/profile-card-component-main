@@ -1,0 +1,82 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--very-dark-desaturated-blue);
+}
+.container {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    width: 330px;
+}
+.card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 ;
+    border-radius: 20px;
+}
+.card .bg {
+    width: 102%;
+    margin-left: -1px;
+}
+.card .content .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    margin-top: -70px;
+    width: 40%;
+}
+.card .name--wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.card h1 {
+    font-size: 20px;    
+}
+.card .age {
+    font-size: 22px;
+    color: var(--dark-gray);
+}
+.card .city {
+    margin-top: 10px;
+    color: var(--dark-gray);
+}
+.info {
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    gap: 40px;
+}
+.likes {
+    margin-left: -15px;
+}
+.card .info p {
+    color: var(--dark-gray);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.card .info h2 {
+    font-size: 22px;}
